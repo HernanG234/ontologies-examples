@@ -292,12 +292,28 @@ based on their toppings</Literal>
         <ObjectProperty IRI="#isIngredientOf"/>
     </TransitiveObjectProperty>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBase"/>
+        <Class IRI="#Pizza"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasTopping"/>
         <Class IRI="#Pizza"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBaseOf"/>
+        <Class IRI="#PizzaBase"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBase"/>
+        <Class IRI="#PizzaBase"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasTopping"/>
         <Class IRI="#PizzaTopping"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBaseOf"/>
+        <Class IRI="#Pizza"/>
     </ObjectPropertyRange>
 </Ontology>
 
