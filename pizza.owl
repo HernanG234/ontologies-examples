@@ -26,6 +26,9 @@ based on their toppings</Literal>
         <ObjectProperty IRI="#hasIngredient"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MargheritaPizza"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#CheeseTopping"/>
     </Declaration>
     <Declaration>
@@ -60,6 +63,9 @@ based on their toppings</Literal>
     </Declaration>
     <Declaration>
         <Class IRI="#OnionTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NamedPizza"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ThinAndCrispyBase"/>
@@ -144,6 +150,24 @@ based on their toppings</Literal>
         <Class IRI="#PepperTopping"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#MargheritaPizza"/>
+        <Class IRI="#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MargheritaPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#MozzarellaTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MargheritaPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#TomatoTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MeatTopping"/>
         <Class IRI="#PizzaTopping"/>
     </SubClassOf>
@@ -154,6 +178,10 @@ based on their toppings</Literal>
     <SubClassOf>
         <Class IRI="#MushroomTopping"/>
         <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NamedPizza"/>
+        <Class IRI="#Pizza"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OliveTopping"/>
@@ -322,6 +350,11 @@ based on their toppings</Literal>
         <ObjectProperty IRI="#isBaseOf"/>
         <Class IRI="#Pizza"/>
     </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MargheritaPizza</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A pizza that only has Mozarella and Tomato toppings</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
