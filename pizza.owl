@@ -25,6 +25,11 @@ based on their toppings</Literal>
     <Declaration>
         <Class IRI="#PizzaBase"/>
     </Declaration>
+    <DisjointClasses>
+        <Class IRI="#Pizza"/>
+        <Class IRI="#PizzaBase"/>
+        <Class IRI="#PizzaTopping"/>
+    </DisjointClasses>
 </Ontology>
 
 
