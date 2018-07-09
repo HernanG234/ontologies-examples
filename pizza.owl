@@ -378,7 +378,6 @@ based on their toppings</Literal>
         <Class IRI="#CheeseTopping"/>
         <Class IRI="#MeatTopping"/>
         <Class IRI="#SeafoodTopping"/>
-        <Class IRI="#VegetableTopping"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#DeepPanBase"/>
