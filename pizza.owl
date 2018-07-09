@@ -176,6 +176,13 @@ based on their toppings</Literal>
         <Class IRI="#MeatTopping"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Pizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBase"/>
+            <Class IRI="#Pizza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PrawnTopping"/>
         <Class IRI="#SeafoodTopping"/>
     </SubClassOf>
