@@ -17,6 +17,9 @@
 based on their toppings</Literal>
     </Annotation>
     <Declaration>
+        <ObjectProperty IRI="#isToppingOf"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#VegetableTopping"/>
     </Declaration>
     <Declaration>
@@ -36,6 +39,9 @@ based on their toppings</Literal>
     </Declaration>
     <Declaration>
         <Class IRI="#ParmezanTopping"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBaseOf"/>
     </Declaration>
     <Declaration>
         <Class IRI="#HamTopping"/>
@@ -63,6 +69,9 @@ based on their toppings</Literal>
     </Declaration>
     <Declaration>
         <Class IRI="#MeatTopping"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isIngredientOf"/>
     </Declaration>
     <Declaration>
         <Class IRI="#GreenPepperTopping"/>
@@ -253,6 +262,26 @@ based on their toppings</Literal>
         <ObjectProperty IRI="#hasTopping"/>
         <ObjectProperty IRI="#hasIngredient"/>
     </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isBaseOf"/>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isToppingOf"/>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasBase"/>
+        <ObjectProperty IRI="#isBaseOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasTopping"/>
+        <ObjectProperty IRI="#isToppingOf"/>
+    </InverseObjectProperties>
 </Ontology>
 
 
