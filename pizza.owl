@@ -345,6 +345,12 @@ based on their toppings</Literal>
         <Class IRI="#PizzaTopping"/>
     </SubClassOf>
     <DisjointClasses>
+        <Class IRI="#AmericanHotPizza"/>
+        <Class IRI="#AmericanaPizza"/>
+        <Class IRI="#MargheritaPizza"/>
+        <Class IRI="#SohoPizza"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#AnchovyTopping"/>
         <Class IRI="#PrawnTopping"/>
         <Class IRI="#TunaTopping"/>
