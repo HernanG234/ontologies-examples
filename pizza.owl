@@ -128,11 +128,24 @@ based on their toppings</Literal>
         <Class IRI="#JalapenoPepperTopping"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#CheesyPizza"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#AmericanHotPizza"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasBase"/>
     </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#CheesyPizza"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Pizza"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasTopping"/>
+                <Class IRI="#CheeseTopping"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#AmericanHotPizza"/>
         <Class IRI="#NamedPizza"/>
