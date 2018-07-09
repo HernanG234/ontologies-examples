@@ -20,6 +20,9 @@ based on their toppings</Literal>
         <Class IRI="#VegetableTopping"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#CheeseTopping"/>
     </Declaration>
     <Declaration>
@@ -56,10 +59,10 @@ based on their toppings</Literal>
         <Class IRI="#ThinAndCrispyBase"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MeatTopping"/>
+        <Class IRI="#Pizza"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Pizza"/>
+        <Class IRI="#MeatTopping"/>
     </Declaration>
     <Declaration>
         <Class IRI="#GreenPepperTopping"/>
