@@ -17,6 +17,12 @@
 based on their toppings</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="#DeepPanBase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThinAndCrispyBase"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#PizzaTopping"/>
     </Declaration>
     <Declaration>
@@ -25,6 +31,18 @@ based on their toppings</Literal>
     <Declaration>
         <Class IRI="#PizzaBase"/>
     </Declaration>
+    <SubClassOf>
+        <Class IRI="#DeepPanBase"/>
+        <Class IRI="#PizzaBase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThinAndCrispyBase"/>
+        <Class IRI="#PizzaBase"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#DeepPanBase"/>
+        <Class IRI="#ThinAndCrispyBase"/>
+    </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Pizza"/>
         <Class IRI="#PizzaBase"/>
