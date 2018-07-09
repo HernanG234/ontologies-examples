@@ -74,6 +74,9 @@ based on their toppings</Literal>
         <Class IRI="#CaperTopping"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasTopping"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#AnchovyTopping"/>
     </Declaration>
     <Declaration>
@@ -99,6 +102,9 @@ based on their toppings</Literal>
     </Declaration>
     <Declaration>
         <Class IRI="#JalapenoPepperTopping"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBase"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#AnchovyTopping"/>
@@ -239,6 +245,14 @@ based on their toppings</Literal>
         <Class IRI="#PizzaBase"/>
         <Class IRI="#PizzaTopping"/>
     </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBase"/>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTopping"/>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </SubObjectPropertyOf>
 </Ontology>
 
 
