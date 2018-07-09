@@ -282,6 +282,12 @@ based on their toppings</Literal>
         <ObjectProperty IRI="#hasTopping"/>
         <ObjectProperty IRI="#isToppingOf"/>
     </InverseObjectProperties>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </TransitiveObjectProperty>
 </Ontology>
 
 
