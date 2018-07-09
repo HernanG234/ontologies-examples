@@ -291,6 +291,14 @@ based on their toppings</Literal>
     <TransitiveObjectProperty>
         <ObjectProperty IRI="#isIngredientOf"/>
     </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTopping"/>
+        <Class IRI="#Pizza"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTopping"/>
+        <Class IRI="#PizzaTopping"/>
+    </ObjectPropertyRange>
 </Ontology>
 
 
