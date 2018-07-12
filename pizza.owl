@@ -96,6 +96,9 @@ based on their toppings</Literal>
         <Class IRI="#Mild"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#UnclosedPizza"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#OliveTopping"/>
     </Declaration>
     <Declaration>
@@ -696,6 +699,17 @@ based on their toppings</Literal>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasSpiciness"/>
             <Class IRI="#Medium"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnclosedPizza"/>
+        <Class IRI="#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnclosedPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#MozzarellaTopping"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
