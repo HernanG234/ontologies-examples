@@ -96,6 +96,9 @@ based on their toppings</Literal>
         <Class IRI="#ValuePartition"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#FourCheesePizza"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#CheesyPizza"/>
     </Declaration>
     <Declaration>
@@ -172,6 +175,16 @@ based on their toppings</Literal>
                 <ObjectProperty IRI="#hasTopping"/>
                 <Class IRI="#CheeseTopping"/>
             </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FourCheesePizza"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Pizza"/>
+            <ObjectExactCardinality cardinality="4">
+                <ObjectProperty IRI="#hasTopping"/>
+                <Class IRI="#CheeseTopping"/>
+            </ObjectExactCardinality>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
