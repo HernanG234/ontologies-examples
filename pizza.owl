@@ -273,8 +273,22 @@ based on their toppings</Literal>
         <Class IRI="#SeafoodTopping"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#AnchovyTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Medium"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#CaperTopping"/>
         <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CaperTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Mild"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CheeseTopping"/>
@@ -289,8 +303,22 @@ based on their toppings</Literal>
         <Class IRI="#PepperTopping"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#GreenPepperTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Medium"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#HamTopping"/>
         <Class IRI="#MeatTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HamTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Mild"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Hot"/>
@@ -299,6 +327,13 @@ based on their toppings</Literal>
     <SubClassOf>
         <Class IRI="#JalapenoPepperTopping"/>
         <Class IRI="#PepperTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JalapenoPepperTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Hot"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MargheritaPizza"/>
@@ -345,8 +380,22 @@ based on their toppings</Literal>
         <Class IRI="#CheeseTopping"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#MozzarellaTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Mild"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MushroomTopping"/>
         <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MushroomTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Mild"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NamedPizza"/>
@@ -357,12 +406,33 @@ based on their toppings</Literal>
         <Class IRI="#VegetableTopping"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#OliveTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Mild"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#OnionTopping"/>
         <Class IRI="#VegetableTopping"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#OnionTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Medium"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ParmezanTopping"/>
         <Class IRI="#CheeseTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParmezanTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Mild"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PepperTopping"/>
@@ -371,6 +441,13 @@ based on their toppings</Literal>
     <SubClassOf>
         <Class IRI="#PepperoniTopping"/>
         <Class IRI="#MeatTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PepperoniTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Medium"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pizza"/>
@@ -382,6 +459,13 @@ based on their toppings</Literal>
     <SubClassOf>
         <Class IRI="#PrawnTopping"/>
         <Class IRI="#SeafoodTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrawnTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Mild"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ProbeInconsistentTopping"/>
@@ -396,8 +480,22 @@ based on their toppings</Literal>
         <Class IRI="#PepperTopping"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#RedPepperTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Medium"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SalamiTopping"/>
         <Class IRI="#MeatTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SalamiTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Medium"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SeafoodTopping"/>
@@ -456,6 +554,13 @@ based on their toppings</Literal>
         <Class IRI="#MeatTopping"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SpicyBeefTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Hot"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ThinAndCrispyBase"/>
         <Class IRI="#PizzaBase"/>
     </SubClassOf>
@@ -464,8 +569,22 @@ based on their toppings</Literal>
         <Class IRI="#VegetableTopping"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#TomatoTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Mild"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#TunaTopping"/>
         <Class IRI="#SeafoodTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TunaTopping"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSpiciness"/>
+            <Class IRI="#Medium"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#VegetableTopping"/>
