@@ -827,6 +827,9 @@ based on their toppings</Literal>
         <ObjectProperty IRI="#isBaseOf"/>
         <Class IRI="#Pizza"/>
     </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasCalorificContentValue"/>
+    </FunctionalDataProperty>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#AmericanHotPizza</IRI>
