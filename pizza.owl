@@ -6,6 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.pizza.com/h/ontologies/2018/6/pizza.owl">
+    <Prefix name="" IRI="http://www.pizza.com/h/ontologies/2018/6/pizza.owl"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -26,10 +27,10 @@ based on their toppings</Literal>
         <ObjectProperty IRI="#hasIngredient"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MargheritaPizza"/>
+        <Class IRI="#CheeseTopping"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CheeseTopping"/>
+        <Class IRI="#MargheritaPizza"/>
     </Declaration>
     <Declaration>
         <Class IRI="#DeepPanBase"/>
@@ -68,10 +69,10 @@ based on their toppings</Literal>
         <Class IRI="#MushroomTopping"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#OnionTopping"/>
+        <Class IRI="#AmericanaPizza"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#AmericanaPizza"/>
+        <Class IRI="#OnionTopping"/>
     </Declaration>
     <Declaration>
         <Class IRI="#NamedPizza"/>
@@ -84,6 +85,9 @@ based on their toppings</Literal>
     </Declaration>
     <Declaration>
         <Class IRI="#MeatTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpicyPizza"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isIngredientOf"/>
@@ -128,10 +132,10 @@ based on their toppings</Literal>
         <Class IRI="#SohoPizza"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Mild"/>
+        <Class IRI="#PrawnTopping"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PrawnTopping"/>
+        <Class IRI="#Mild"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MozzarellaTopping"/>
@@ -174,6 +178,22 @@ based on their toppings</Literal>
             <Class IRI="#Medium"/>
             <Class IRI="#Mild"/>
         </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SpicyPizza"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Pizza"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasTopping"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#PizzaTopping"/>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#hasSpiciness"/>
+                        <Class IRI="#Hot"/>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#VegetarianPizza"/>
