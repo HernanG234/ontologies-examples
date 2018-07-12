@@ -36,6 +36,9 @@ based on their toppings</Literal>
         <ObjectProperty IRI="#isBaseOf"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#QuattroFormaggio"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#SpicyBeefTopping"/>
     </Declaration>
     <Declaration>
@@ -45,10 +48,13 @@ based on their toppings</Literal>
         <Class IRI="#TomatoTopping"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#AmericanaPizza"/>
+        <DataProperty IRI="#hasCalorificContentValue"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OnionTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AmericanaPizza"/>
     </Declaration>
     <Declaration>
         <Class IRI="#NamedPizza"/>
@@ -129,6 +135,9 @@ based on their toppings</Literal>
         <Class IRI="#Medium"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Example-Margherita"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MushroomTopping"/>
     </Declaration>
     <Declaration>
@@ -147,10 +156,10 @@ based on their toppings</Literal>
         <Class IRI="#CaperTopping"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Hot"/>
+        <ObjectProperty IRI="#hasTopping"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasTopping"/>
+        <Class IRI="#Hot"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AnchovyTopping"/>
@@ -689,6 +698,24 @@ based on their toppings</Literal>
         <Class IRI="#PizzaBase"/>
         <Class IRI="#PizzaTopping"/>
     </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#MargheritaPizza"/>
+        <NamedIndividual IRI="#Example-Margherita"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FourCheesePizza"/>
+        <NamedIndividual IRI="#QuattroFormaggio"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCalorificContentValue"/>
+        <NamedIndividual IRI="#Example-Margherita"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">263</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCalorificContentValue"/>
+        <NamedIndividual IRI="#QuattroFormaggio"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">723</Literal>
+    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasBase"/>
         <ObjectProperty IRI="#hasIngredient"/>
