@@ -153,6 +153,9 @@ based on their toppings</Literal>
         <Class IRI="#HighCaloriePizza"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#NonVegetarianPizza"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#GreenPepperTopping"/>
     </Declaration>
     <Declaration>
@@ -239,6 +242,18 @@ based on their toppings</Literal>
                     </FacetRestriction>
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#NonVegetarianPizza"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Pizza"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#Pizza"/>
+                <ObjectComplementOf>
+                    <Class IRI="#VegetarianPizza"/>
+                </ObjectComplementOf>
+            </ObjectIntersectionOf>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -735,6 +750,10 @@ based on their toppings</Literal>
     <DisjointClasses>
         <Class IRI="#MozzarellaTopping"/>
         <Class IRI="#ParmezanTopping"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#NonVegetarianPizza"/>
+        <Class IRI="#VegetarianPizza"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Pizza"/>
