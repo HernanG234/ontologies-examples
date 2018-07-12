@@ -114,6 +114,9 @@ based on their toppings</Literal>
         <Class IRI="#AmericanHotPizza"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#France"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#LowCaloriePizza"/>
     </Declaration>
     <Declaration>
@@ -130,6 +133,9 @@ based on their toppings</Literal>
     </Declaration>
     <Declaration>
         <Class IRI="#VegetarianPizza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#America"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ParmezanTopping"/>
@@ -153,6 +159,9 @@ based on their toppings</Literal>
         <Class IRI="#Pizza"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Germany"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#HighCaloriePizza"/>
     </Declaration>
     <Declaration>
@@ -160,6 +169,9 @@ based on their toppings</Literal>
     </Declaration>
     <Declaration>
         <Class IRI="#GreenPepperTopping"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Italy"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PepperTopping"/>
@@ -177,7 +189,13 @@ based on their toppings</Literal>
         <Class IRI="#AnchovyTopping"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#England"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MozzarellaTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
     </Declaration>
     <Declaration>
         <Class IRI="#JalapenoPepperTopping"/>
@@ -775,8 +793,28 @@ based on their toppings</Literal>
         <Class IRI="#PizzaTopping"/>
     </DisjointClasses>
     <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#America"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#England"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#MargheritaPizza"/>
         <NamedIndividual IRI="#Example-Margherita"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#France"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Germany"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Italy"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#FourCheesePizza"/>
