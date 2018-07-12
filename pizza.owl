@@ -66,6 +66,9 @@ based on their toppings</Literal>
         <Class IRI="#SpicyPizza"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasCountryOfOrigin"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isIngredientOf"/>
     </Declaration>
     <Declaration>
@@ -511,6 +514,13 @@ based on their toppings</Literal>
             <ObjectProperty IRI="#hasSpiciness"/>
             <Class IRI="#Mild"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MozzarellaTopping"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasCountryOfOrigin"/>
+            <NamedIndividual IRI="#Italy"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MushroomTopping"/>
