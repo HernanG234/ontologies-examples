@@ -51,10 +51,10 @@ based on their toppings</Literal>
         <DataProperty IRI="#hasCalorificContentValue"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#OnionTopping"/>
+        <Class IRI="#AmericanaPizza"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#AmericanaPizza"/>
+        <Class IRI="#OnionTopping"/>
     </Declaration>
     <Declaration>
         <Class IRI="#NamedPizza"/>
@@ -138,19 +138,19 @@ based on their toppings</Literal>
         <Class IRI="#VegetarianPizza"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#America"/>
+        <Class IRI="#ParmezanTopping"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ParmezanTopping"/>
+        <NamedIndividual IRI="#America"/>
     </Declaration>
     <Declaration>
         <Class IRI="#HamTopping"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Medium"/>
+        <NamedIndividual IRI="#Example-Margherita"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Example-Margherita"/>
+        <Class IRI="#Medium"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MushroomTopping"/>
@@ -174,19 +174,19 @@ based on their toppings</Literal>
         <Class IRI="#GreenPepperTopping"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Italy"/>
+        <Class IRI="#PepperTopping"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PepperTopping"/>
+        <NamedIndividual IRI="#Italy"/>
     </Declaration>
     <Declaration>
         <Class IRI="#CaperTopping"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasTopping"/>
+        <Class IRI="#Hot"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Hot"/>
+        <ObjectProperty IRI="#hasTopping"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AnchovyTopping"/>
@@ -218,6 +218,16 @@ based on their toppings</Literal>
                 <Class IRI="#CheeseTopping"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Country"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#France"/>
+            <NamedIndividual IRI="#Germany"/>
+            <NamedIndividual IRI="#Italy"/>
+            <NamedIndividual IRI="#England"/>
+            <NamedIndividual IRI="#America"/>
+        </ObjectOneOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#FourCheesePizza"/>
