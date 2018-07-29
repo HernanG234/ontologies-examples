@@ -21,6 +21,16 @@
     
 
 
+    <!-- http://www.hlaptop.com/fhkb.owl#hasAncestor -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasAncestor">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasRelation"/>
+        <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isAncestorOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.hlaptop.com/fhkb.owl#hasFather -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasFather">
@@ -42,8 +52,23 @@
     <!-- http://www.hlaptop.com/fhkb.owl#hasParent -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasParent">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasAncestor"/>
         <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isParentOf"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#hasRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasRelation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#isAncestorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isAncestorOf"/>
     
 
 
