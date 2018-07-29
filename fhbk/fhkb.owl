@@ -97,6 +97,16 @@
     
 
 
+    <!-- http://www.hlaptop.com/fhkb.owl#hasSex -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasSex">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.hlaptop.com/fhkb.owl#Sex"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.hlaptop.com/fhkb.owl#isAncestorOf -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isAncestorOf"/>
@@ -140,6 +150,63 @@
     <!-- http://www.hlaptop.com/fhkb.owl#isParentOf -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isParentOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#DomainEntity -->
+
+    <owl:Class rdf:about="http://www.hlaptop.com/fhkb.owl#DomainEntity"/>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Femaleness -->
+
+    <owl:Class rdf:about="http://www.hlaptop.com/fhkb.owl#Femaleness">
+        <rdfs:subClassOf rdf:resource="http://www.hlaptop.com/fhkb.owl#Sex"/>
+        <owl:disjointWith rdf:resource="http://www.hlaptop.com/fhkb.owl#Maleness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Maleness -->
+
+    <owl:Class rdf:about="http://www.hlaptop.com/fhkb.owl#Maleness">
+        <rdfs:subClassOf rdf:resource="http://www.hlaptop.com/fhkb.owl#Sex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Person -->
+
+    <owl:Class rdf:about="http://www.hlaptop.com/fhkb.owl#Person">
+        <rdfs:subClassOf rdf:resource="http://www.hlaptop.com/fhkb.owl#DomainEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hlaptop.com/fhkb.owl#hasSex"/>
+                <owl:someValuesFrom rdf:resource="http://www.hlaptop.com/fhkb.owl#Sex"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.hlaptop.com/fhkb.owl#Sex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Sex -->
+
+    <owl:Class rdf:about="http://www.hlaptop.com/fhkb.owl#Sex">
+        <rdfs:subClassOf rdf:resource="http://www.hlaptop.com/fhkb.owl#DomainEntity"/>
+    </owl:Class>
     
 
 
