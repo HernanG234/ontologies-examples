@@ -40,6 +40,37 @@
     
 
 
+    <!-- http://www.hlaptop.com/fhkb.owl#hasGrandFather -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasGrandFather">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasGrandParent"/>
+        <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isGrandFatherOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#hasGrandMother -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasGrandMother">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasGrandParent"/>
+        <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isGrandMotherOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#hasGrandParent -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasGrandParent">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasAncestor"/>
+        <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isGrandParentOf"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasParent"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasParent"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.hlaptop.com/fhkb.owl#hasMother -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasMother">
@@ -75,6 +106,28 @@
     <!-- http://www.hlaptop.com/fhkb.owl#isFatherOf -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isFatherOf"/>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#isGrandFatherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isGrandFatherOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isGrandParentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#isGrandMotherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isGrandMotherOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isGrandParentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#isGrandParentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isGrandParentOf"/>
     
 
 
