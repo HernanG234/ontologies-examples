@@ -453,8 +453,8 @@
     <!-- http://www.hlaptop.com/fhkb.owl#Joyce_Archer_1921 -->
 
     <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Joyce_Archer_1921">
-        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Violet_Heath_1887"/>
-        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#James_Alexander_Archer_1882"/>
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#James_Alexander_Archer_1882"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Violet_Heath_1887"/>
     </owl:NamedIndividual>
     
 
