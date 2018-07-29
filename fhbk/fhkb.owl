@@ -226,6 +226,18 @@
         <rdfs:subClassOf rdf:resource="http://www.hlaptop.com/fhkb.owl#DomainEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hlaptop.com/fhkb.owl#hasFather"/>
+                <owl:someValuesFrom rdf:resource="http://www.hlaptop.com/fhkb.owl#Man"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hlaptop.com/fhkb.owl#hasMother"/>
+                <owl:someValuesFrom rdf:resource="http://www.hlaptop.com/fhkb.owl#Woman"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.hlaptop.com/fhkb.owl#hasSex"/>
                 <owl:someValuesFrom rdf:resource="http://www.hlaptop.com/fhkb.owl#Sex"/>
             </owl:Restriction>
