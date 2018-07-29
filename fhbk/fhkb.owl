@@ -48,10 +48,6 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
         <rdfs:range rdf:resource="http://www.hlaptop.com/fhkb.owl#Man"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasParent"/>
-            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasSon"/>
-        </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
@@ -132,7 +128,6 @@
     <!-- http://www.hlaptop.com/fhkb.owl#hasParent -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasParent">
-        <owl:equivalentProperty rdf:resource="http://www.hlaptop.com/fhkb.owl#isChildOf"/>
         <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasAncestor"/>
         <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isParentOf"/>
         <rdfs:domain rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
@@ -165,10 +160,6 @@
         <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasBloodRelation"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasParent"/>
-            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#isParentOf"/>
-        </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
@@ -181,10 +172,6 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
         <rdfs:range rdf:resource="http://www.hlaptop.com/fhkb.owl#Woman"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasParent"/>
-            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasDaughter"/>
-        </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
@@ -563,6 +550,8 @@
     <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#David_Bright_1934">
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#William_George_Bright_1901"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Iris_Ellen_Archer_1906"/>
+        <isBrotherOf rdf:resource="http://www.hlaptop.com/fhkb.owl#John_Bright_1930"/>
+        <isBrotherOf rdf:resource="http://www.hlaptop.com/fhkb.owl#Peter_William_Bright_1941"/>
     </owl:NamedIndividual>
     
 
@@ -674,6 +663,9 @@
     <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Janet_Bright_1964">
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#John_Bright_1930"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Joyce_Gosport"/>
+        <isSisterOf rdf:resource="http://www.hlaptop.com/fhkb.owl#Ian_Bright_1959"/>
+        <isSisterOf rdf:resource="http://www.hlaptop.com/fhkb.owl#Mark_Bright_1956"/>
+        <isSisterOf rdf:resource="http://www.hlaptop.com/fhkb.owl#William_Bright_1970"/>
     </owl:NamedIndividual>
     
 
@@ -764,6 +756,9 @@
     <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Mark_Bright_1956">
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#John_Bright_1930"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Joyce_Gosport"/>
+        <isBrotherOf rdf:resource="http://www.hlaptop.com/fhkb.owl#Ian_Bright_1959"/>
+        <isBrotherOf rdf:resource="http://www.hlaptop.com/fhkb.owl#Janet_Bright_1964"/>
+        <isBrotherOf rdf:resource="http://www.hlaptop.com/fhkb.owl#William_Bright_1970"/>
     </owl:NamedIndividual>
     
 
@@ -818,6 +813,7 @@
     <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Robert_David_Bright_1965">
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#David_Bright_1934"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Margaret_Grace_Rever_1934"/>
+        <isBrotherOf rdf:resource="http://www.hlaptop.com/fhkb.owl#Richard_John_Bright_1962"/>
     </owl:NamedIndividual>
     
 
