@@ -62,6 +62,362 @@
     <!-- http://www.hlaptop.com/fhkb.owl#isParentOf -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isParentOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Alec_John_Archer_1927 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Alec_John_Archer_1927">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#James_Alexander_Archer_1882"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Violet_Heath_1887"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Charles_Herbert_Rever_1895 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Charles_Herbert_Rever_1895">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#William_Rever_1870"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Elizabeth_Frances_Jessop_1869"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Charlotte_Caroline_Jane_Bright_1894 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Charlotte_Caroline_Jane_Bright_1894">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Henry_Edmund_Bright_1862"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Charlotte_Hewett_1863"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Charlotte_Hewett_1863 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Charlotte_Hewett_1863"/>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Clare_Bright_1966 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Clare_Bright_1966">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Peter_William_Bright_1941"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Diana_Pool"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#David_Bright_1934 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#David_Bright_1934">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#William_George_Bright_1901"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Iris_Ellen_Archer_1906"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Dereck_Heath -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Dereck_Heath"/>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Diana_Pool -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Diana_Pool"/>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Eileen_Mary_Rever_1929 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Eileen_Mary_Rever_1929">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Charles_Herbert_Rever_1895"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Violet_Sylvia_Steward_1894"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Elizabeth_Frances_Jessop_1869 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Elizabeth_Frances_Jessop_1869"/>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Ethel_Archer_1912 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Ethel_Archer_1912">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#James_Alexander_Archer_1882"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Violet_Heath_1887"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Frederick_Herbert_Bright_1889 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Frederick_Herbert_Bright_1889">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Henry_Edmund_Bright_1862"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Charlotte_Hewett_1863"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Henry_Edmund_Bright_1862 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Henry_Edmund_Bright_1862"/>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Henry_Edmund_Bright_1887 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Henry_Edmund_Bright_1887">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Henry_Edmund_Bright_1862"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Charlotte_Hewett_1863"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Ian_Bright_1959 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Ian_Bright_1959">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#John_Bright_1930"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Joyce_Gosport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Iris_Ellen_Archer_1906 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Iris_Ellen_Archer_1906">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#James_Alexander_Archer_1882"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Violet_Heath_1887"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#James_Alexander_Archer_1882 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#James_Alexander_Archer_1882"/>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#James_Bright_1964 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#James_Bright_1964">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Peter_William_Bright_1941"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Diana_Pool"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#James_Frank_Hayden_Bright_1891 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#James_Frank_Hayden_Bright_1891">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Henry_Edmund_Bright_1862"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Charlotte_Hewett_1863"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Janet_Bright_1964 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Janet_Bright_1964">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#John_Bright_1930"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Joyce_Gosport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#John_Bright_1930 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#John_Bright_1930">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#William_George_Bright_1901"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Iris_Ellen_Archer_1906"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#John_Tacey_Steward_1873 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#John_Tacey_Steward_1873"/>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Joyce_Archer_1921 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Joyce_Archer_1921">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Violet_Heath_1887"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#James_Alexander_Archer_1882"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Joyce_Gosport -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Joyce_Gosport"/>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Julie_Bright_1966 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Julie_Bright_1966">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Peter_William_Bright_1941"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Diana_Pool"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Kathleen_Minnie_Bright_1904 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Kathleen_Minnie_Bright_1904">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Henry_Edmund_Bright_1862"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Charlotte_Hewett_1863"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Leonard_John_Bright_1890 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Leonard_John_Bright_1890">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Henry_Edmund_Bright_1862"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Charlotte_Hewett_1863"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Lois_Green_1871 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Lois_Green_1871"/>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Margaret_Grace_Rever_1934 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Margaret_Grace_Rever_1934">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Charles_Herbert_Rever_1895"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Violet_Sylvia_Steward_1894"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Mark_Antonhy_Heath_1960 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Mark_Antonhy_Heath_1960">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Dereck_Heath"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Eileen_Mary_Rever_1929"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Mark_Bright_1956 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Mark_Bright_1956">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#John_Bright_1930"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Joyce_Gosport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Nicholas_Charles_Heath_1964 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Nicholas_Charles_Heath_1964">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Dereck_Heath"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Eileen_Mary_Rever_1929"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Nora_Ada_Bright_1899 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Nora_Ada_Bright_1899">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Henry_Edmund_Bright_1862"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Charlotte_Hewett_1863"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Norman_James_Archer_1909 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Norman_James_Archer_1909">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#James_Alexander_Archer_1882"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Violet_Heath_1887"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Peter_William_Bright_1941 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Peter_William_Bright_1941">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#William_George_Bright_1901"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Iris_Ellen_Archer_1906"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Richard_John_Bright_1962 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Richard_John_Bright_1962">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#David_Bright_1934"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Margaret_Grace_Rever_1934"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Robert_David_Bright_1965 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Robert_David_Bright_1965">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#David_Bright_1934"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Margaret_Grace_Rever_1934"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Violet_Heath_1887 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Violet_Heath_1887"/>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Violet_Sylvia_Steward_1894 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Violet_Sylvia_Steward_1894">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#John_Tacey_Steward_1873"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Lois_Green_1871"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#William_Bright_1970 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#William_Bright_1970">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#John_Bright_1930"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Joyce_Gosport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#William_George_Bright_1901 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#William_George_Bright_1901">
+        <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Henry_Edmund_Bright_1862"/>
+        <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Charlotte_Hewett_1863"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#William_Rever_1870 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#William_Rever_1870"/>
 </rdf:RDF>
 
 
