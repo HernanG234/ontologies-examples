@@ -46,7 +46,32 @@
         <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasSibling"/>
         <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isBrotherOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
         <rdfs:range rdf:resource="http://www.hlaptop.com/fhkb.owl#Man"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasParent"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasSon"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#hasChild -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasChild">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasBloodRelation"/>
+        <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isChildOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#hasDaughter -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasDaughter">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasChild"/>
+        <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isDaughterOf"/>
+        <rdfs:domain rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.hlaptop.com/fhkb.owl#Woman"/>
     </owl:ObjectProperty>
     
 
@@ -107,6 +132,7 @@
     <!-- http://www.hlaptop.com/fhkb.owl#hasParent -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasParent">
+        <owl:equivalentProperty rdf:resource="http://www.hlaptop.com/fhkb.owl#isChildOf"/>
         <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasAncestor"/>
         <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isParentOf"/>
         <rdfs:domain rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
@@ -153,7 +179,23 @@
         <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasSibling"/>
         <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isSisterOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
         <rdfs:range rdf:resource="http://www.hlaptop.com/fhkb.owl#Woman"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasParent"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasDaughter"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#hasSon -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasSon">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasChild"/>
+        <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isSonOf"/>
+        <rdfs:domain rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.hlaptop.com/fhkb.owl#Man"/>
     </owl:ObjectProperty>
     
 
@@ -167,6 +209,18 @@
     <!-- http://www.hlaptop.com/fhkb.owl#isBrotherOf -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isBrotherOf"/>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#isChildOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isChildOf"/>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#isDaughterOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isDaughterOf"/>
     
 
 
@@ -213,6 +267,12 @@
     <!-- http://www.hlaptop.com/fhkb.owl#isSisterOf -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isSisterOf"/>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#isSonOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isSonOf"/>
     
 
 
