@@ -24,9 +24,18 @@
     <!-- http://www.hlaptop.com/fhkb.owl#hasAncestor -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasAncestor">
-        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasRelation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasBloodRelation"/>
         <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isAncestorOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#hasBloodRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasBloodRelation">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasRelation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
     </owl:ObjectProperty>
     
 
@@ -170,9 +179,85 @@
     
 
 
+    <!-- http://www.hlaptop.com/fhkb.owl#Ancestor -->
+
+    <owl:Class rdf:about="http://www.hlaptop.com/fhkb.owl#Ancestor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hlaptop.com/fhkb.owl#isAncestorOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.hlaptop.com/fhkb.owl#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Descendant -->
+
+    <owl:Class rdf:about="http://www.hlaptop.com/fhkb.owl#Descendant">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hlaptop.com/fhkb.owl#hasAncestor"/>
+                        <owl:someValuesFrom rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.hlaptop.com/fhkb.owl#DomainEntity"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.hlaptop.com/fhkb.owl#DomainEntity -->
 
     <owl:Class rdf:about="http://www.hlaptop.com/fhkb.owl#DomainEntity"/>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#FemaleAncestor -->
+
+    <owl:Class rdf:about="http://www.hlaptop.com/fhkb.owl#FemaleAncestor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Woman"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hlaptop.com/fhkb.owl#isAncestorOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.hlaptop.com/fhkb.owl#Ancestor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#FemaleDescendant -->
+
+    <owl:Class rdf:about="http://www.hlaptop.com/fhkb.owl#FemaleDescendant">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Woman"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hlaptop.com/fhkb.owl#hasAncestor"/>
+                        <owl:someValuesFrom rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.hlaptop.com/fhkb.owl#Descendant"/>
+    </owl:Class>
     
 
 
@@ -181,6 +266,44 @@
     <owl:Class rdf:about="http://www.hlaptop.com/fhkb.owl#Femaleness">
         <rdfs:subClassOf rdf:resource="http://www.hlaptop.com/fhkb.owl#Sex"/>
         <owl:disjointWith rdf:resource="http://www.hlaptop.com/fhkb.owl#Maleness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#MaleAncestor -->
+
+    <owl:Class rdf:about="http://www.hlaptop.com/fhkb.owl#MaleAncestor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Man"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hlaptop.com/fhkb.owl#isAncestorOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.hlaptop.com/fhkb.owl#Ancestor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#MaleDescendant -->
+
+    <owl:Class rdf:about="http://www.hlaptop.com/fhkb.owl#MaleDescendant">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Man"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hlaptop.com/fhkb.owl#hasAncestor"/>
+                        <owl:someValuesFrom rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.hlaptop.com/fhkb.owl#Descendant"/>
     </owl:Class>
     
 
