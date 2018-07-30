@@ -1057,6 +1057,64 @@
     <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#William_Rever_1870">
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1870</hasBirthYear>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Alec_John_Archer_1927"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Charles_Herbert_Rever_1895"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Charlotte_Caroline_Jane_Bright_1894"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Charlotte_Hewett_1863"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Clare_Bright_1966"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#David_Bright_1934"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Dereck_Heath"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Diana_Pool"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Eileen_Mary_Rever_1929"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Elizabeth_Frances_Jessop_1869"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Ethel_Archer_1912"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Frederick_Herbert_Bright_1889"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Henry_Edmund_Bright_1862"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Henry_Edmund_Bright_1887"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Ian_Bright_1959"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Iris_Ellen_Archer_1906"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#James_Alexander_Archer_1882"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#James_Bright_1964"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#James_Frank_Hayden_Bright_1891"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Janet_Bright_1964"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#John_Bright_1930"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#John_Tacey_Steward_1873"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Joyce_Archer_1921"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Joyce_Gosport"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Julie_Bright_1966"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Kathleen_Minnie_Bright_1904"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Leonard_John_Bright_1890"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Lois_Green_1871"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Margaret_Grace_Rever_1934"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Mark_Antonhy_Heath_1960"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Mark_Bright_1956"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Nicholas_Charles_Heath_1964"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Nora_Ada_Bright_1899"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Norman_James_Archer_1909"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Peter_William_Bright_1941"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Richard_John_Bright_1962"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Robert_David_Bright_1965"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Violet_Heath_1887"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Violet_Sylvia_Steward_1894"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#William_Bright_1970"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#William_George_Bright_1901"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#William_Rever_1870"/>
+        </owl:distinctMembers>
+    </rdf:Description>
 </rdf:RDF>
 
 
