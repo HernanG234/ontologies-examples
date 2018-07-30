@@ -31,6 +31,21 @@
     
 
 
+    <!-- http://www.hlaptop.com/fhkb.owl#hasAunt -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasAunt">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasBloodRelation"/>
+        <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isAuntOf"/>
+        <rdfs:domain rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.hlaptop.com/fhkb.owl#Woman"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasParent"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasSister"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.hlaptop.com/fhkb.owl#hasBloodRelation -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasBloodRelation">
@@ -114,6 +129,38 @@
     
 
 
+    <!-- http://www.hlaptop.com/fhkb.owl#hasGreatAunt -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasGreatAunt">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasBloodRelation"/>
+        <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isGreatAuntOf"/>
+        <rdfs:domain rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.hlaptop.com/fhkb.owl#Woman"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasParent"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasParent"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasSister"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#hasGreatUncle -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasGreatUncle">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasBloodRelation"/>
+        <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isGreatUncleOf"/>
+        <rdfs:domain rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.hlaptop.com/fhkb.owl#Man"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasParent"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasParent"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasBrother"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.hlaptop.com/fhkb.owl#hasMother -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasMother">
@@ -187,9 +234,30 @@
     
 
 
+    <!-- http://www.hlaptop.com/fhkb.owl#hasUncle -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasUncle">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasBloodRelation"/>
+        <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isUncleOf"/>
+        <rdfs:domain rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.hlaptop.com/fhkb.owl#Man"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasParent"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasBrother"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.hlaptop.com/fhkb.owl#isAncestorOf -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isAncestorOf"/>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#isAuntOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isAuntOf"/>
     
 
 
@@ -239,6 +307,18 @@
     
 
 
+    <!-- http://www.hlaptop.com/fhkb.owl#isGreatAuntOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isGreatAuntOf"/>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#isGreatUncleOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isGreatUncleOf"/>
+    
+
+
     <!-- http://www.hlaptop.com/fhkb.owl#isMotherOf -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isMotherOf"/>
@@ -260,6 +340,12 @@
     <!-- http://www.hlaptop.com/fhkb.owl#isSonOf -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isSonOf"/>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#isUncleOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isUncleOf"/>
     
 
 
