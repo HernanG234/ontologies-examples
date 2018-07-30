@@ -364,6 +364,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasBirthYear">
         <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasEventYear"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     </owl:DatatypeProperty>
     
 
