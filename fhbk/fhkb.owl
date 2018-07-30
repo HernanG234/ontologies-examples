@@ -572,6 +572,13 @@
                 <owl:someValuesFrom rdf:resource="http://www.hlaptop.com/fhkb.owl#Sex"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hlaptop.com/fhkb.owl#hasParent"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://www.hlaptop.com/fhkb.owl#Sex"/>
     </owl:Class>
     
