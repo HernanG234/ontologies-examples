@@ -710,6 +710,19 @@
     <!-- http://www.hlaptop.com/fhkb.owl#David_Bright_1934 -->
 
     <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#David_Bright_1934">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hlaptop.com/fhkb.owl#isParentOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Richard_John_Bright_1962"/>
+                            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Robert_David_Bright_1965"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#William_George_Bright_1901"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Iris_Ellen_Archer_1906"/>
         <isBrotherOf rdf:resource="http://www.hlaptop.com/fhkb.owl#John_Bright_1930"/>
