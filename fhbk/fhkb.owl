@@ -516,25 +516,6 @@
     
 
 
-    <!-- http://www.hlaptop.com/fhkb.owl#ParentOfRichard -->
-
-    <owl:Class rdf:about="http://www.hlaptop.com/fhkb.owl#ParentOfRichard">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Person"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.hlaptop.com/fhkb.owl#isParentOf"/>
-                        <owl:hasValue rdf:resource="http://www.hlaptop.com/fhkb.owl#Richard_John_Bright_1962"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.hlaptop.com/fhkb.owl#DomainEntity"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.hlaptop.com/fhkb.owl#ParentOfRichardAndRobert -->
 
     <owl:Class rdf:about="http://www.hlaptop.com/fhkb.owl#ParentOfRichardAndRobert">
@@ -552,25 +533,6 @@
                                 </owl:oneOf>
                             </owl:Class>
                         </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.hlaptop.com/fhkb.owl#DomainEntity"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.hlaptop.com/fhkb.owl#ParentOfRobert -->
-
-    <owl:Class rdf:about="http://www.hlaptop.com/fhkb.owl#ParentOfRobert">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Person"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.hlaptop.com/fhkb.owl#isParentOf"/>
-                        <owl:hasValue rdf:resource="http://www.hlaptop.com/fhkb.owl#Robert_David_Bright_1965"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
