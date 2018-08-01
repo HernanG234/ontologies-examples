@@ -107,6 +107,17 @@
     
 
 
+    <!-- http://www.hlaptop.com/fhkb.owl#hasFemalePartner -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasFemalePartner">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasPartner"/>
+        <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isFemalePartnerIn"/>
+        <rdfs:domain rdf:resource="http://www.hlaptop.com/fhkb.owl#Marriage"/>
+        <rdfs:range rdf:resource="http://www.hlaptop.com/fhkb.owl#Woman"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.hlaptop.com/fhkb.owl#hasFirstCousin -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasFirstCousin">
@@ -205,6 +216,17 @@
     
 
 
+    <!-- http://www.hlaptop.com/fhkb.owl#hasMalePartner -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasMalePartner">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasPartner"/>
+        <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isMalePartnerIn"/>
+        <rdfs:domain rdf:resource="http://www.hlaptop.com/fhkb.owl#Marriage"/>
+        <rdfs:range rdf:resource="http://www.hlaptop.com/fhkb.owl#Man"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.hlaptop.com/fhkb.owl#hasMother -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasMother">
@@ -223,6 +245,17 @@
         <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasAncestor"/>
         <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isParentOf"/>
         <rdfs:domain rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#hasPartner -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasPartner">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasRelation"/>
+        <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isPartnerIn"/>
+        <rdfs:domain rdf:resource="http://www.hlaptop.com/fhkb.owl#Marriage"/>
         <rdfs:range rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
     </owl:ObjectProperty>
     
@@ -361,6 +394,12 @@
     
 
 
+    <!-- http://www.hlaptop.com/fhkb.owl#isFemalePartnerIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isFemalePartnerIn"/>
+    
+
+
     <!-- http://www.hlaptop.com/fhkb.owl#isGrandFatherOf -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isGrandFatherOf">
@@ -395,6 +434,12 @@
     
 
 
+    <!-- http://www.hlaptop.com/fhkb.owl#isMalePartnerIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isMalePartnerIn"/>
+    
+
+
     <!-- http://www.hlaptop.com/fhkb.owl#isMotherOf -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isMotherOf"/>
@@ -404,6 +449,12 @@
     <!-- http://www.hlaptop.com/fhkb.owl#isParentOf -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isParentOf"/>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#isPartnerIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isPartnerIn"/>
     
 
 
@@ -483,6 +534,15 @@
 
     <owl:DatatypeProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasGivenName">
         <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasName"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#hasMarriageYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasMarriageYear">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasEventYear"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -667,6 +727,14 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.hlaptop.com/fhkb.owl#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#Marriage -->
+
+    <owl:Class rdf:about="http://www.hlaptop.com/fhkb.owl#Marriage">
         <rdfs:subClassOf rdf:resource="http://www.hlaptop.com/fhkb.owl#DomainEntity"/>
     </owl:Class>
     
@@ -1286,6 +1354,39 @@
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1870</hasBirthYear>
         <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rever</hasFamilyName>
         <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">William</hasFirstGivenName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#m001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#m001">
+        <hasFemalePartner rdf:resource="http://www.hlaptop.com/fhkb.owl#Margaret_Grace_Rever_1934"/>
+        <hasMalePartner rdf:resource="http://www.hlaptop.com/fhkb.owl#David_Bright_1934"/>
+        <hasMarriageYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1958</hasMarriageYear>
+        <rdfs:comment xml:lang="en">Marriage of David and Margaret</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#m002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#m002">
+        <hasFemalePartner rdf:resource="http://www.hlaptop.com/fhkb.owl#Joyce_Gosport"/>
+        <hasMalePartner rdf:resource="http://www.hlaptop.com/fhkb.owl#John_Bright_1930"/>
+        <hasMarriageYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1955</hasMarriageYear>
+        <rdfs:comment xml:lang="en">Marriage of John and Joyce</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#m003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#m003">
+        <hasFemalePartner rdf:resource="http://www.hlaptop.com/fhkb.owl#Diana_Pool"/>
+        <hasMalePartner rdf:resource="http://www.hlaptop.com/fhkb.owl#Peter_William_Bright_1941"/>
+        <hasMarriageYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1964</hasMarriageYear>
+        <rdfs:comment xml:lang="en">Marriage of Peter and Diana</rdfs:comment>
     </owl:NamedIndividual>
     
 
