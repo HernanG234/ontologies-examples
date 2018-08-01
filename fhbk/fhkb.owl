@@ -123,11 +123,28 @@
     
 
 
+    <!-- http://www.hlaptop.com/fhkb.owl#hasFirstCousinOnceRemoved -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasFirstCousinOnceRemoved">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasCousin"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasFirstCousin"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasChild"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.hlaptop.com/fhkb.owl#hasGrandFather -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasGrandFather">
         <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasGrandParent"/>
         <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isGrandFatherOf"/>
+        <rdfs:domain rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.hlaptop.com/fhkb.owl#Man"/>
     </owl:ObjectProperty>
     
 
@@ -137,6 +154,8 @@
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasGrandMother">
         <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasGrandParent"/>
         <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isGrandMotherOf"/>
+        <rdfs:domain rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.hlaptop.com/fhkb.owl#Woman"/>
     </owl:ObjectProperty>
     
 
@@ -213,6 +232,37 @@
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasRelation">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#hasSecondCousin -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasSecondCousin">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasCousin"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasGrandParent"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasSibling"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#isGrandParentOf"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#hasSecondCousinOnceRemoved -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasSecondCousinOnceRemoved">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasCousin"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasSecondCousin"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasChild"/>
+        </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
