@@ -386,6 +386,49 @@
     
 
 
+    <!-- http://www.hlaptop.com/fhkb.owl#hasFamilyName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasFamilyName">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasName"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#hasFirstGivenName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasFirstGivenName">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasGivenName"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#hasGivenName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasGivenName">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasName"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasName">
+        <rdfs:domain rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#hasSecondGivenName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasSecondGivenName">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasGivenName"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -665,6 +708,9 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#James_Alexander_Archer_1882"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Violet_Heath_1887"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1927</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Archer</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alec</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John</hasSecondGivenName>
     </owl:NamedIndividual>
     
 
@@ -675,6 +721,9 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#William_Rever_1870"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Elizabeth_Frances_Jessop_1869"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1895</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rever</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Charles</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Herbert</hasSecondGivenName>
     </owl:NamedIndividual>
     
 
@@ -685,6 +734,9 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Henry_Edmund_Bright_1862"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Charlotte_Hewett_1863"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1894</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Charlotte</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caroline</hasSecondGivenName>
     </owl:NamedIndividual>
     
 
@@ -693,6 +745,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Charlotte_Hewett_1863">
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1863</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hewett</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Charlotte</hasFirstGivenName>
     </owl:NamedIndividual>
     
 
@@ -703,6 +757,8 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Peter_William_Bright_1941"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Diana_Pool"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1966</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clare</hasFirstGivenName>
     </owl:NamedIndividual>
     
 
@@ -710,37 +766,32 @@
     <!-- http://www.hlaptop.com/fhkb.owl#David_Bright_1934 -->
 
     <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#David_Bright_1934">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.hlaptop.com/fhkb.owl#isParentOf"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:oneOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Richard_John_Bright_1962"/>
-                            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#Robert_David_Bright_1965"/>
-                        </owl:oneOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdf:type>
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#William_George_Bright_1901"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Iris_Ellen_Archer_1906"/>
         <isBrotherOf rdf:resource="http://www.hlaptop.com/fhkb.owl#John_Bright_1930"/>
         <isBrotherOf rdf:resource="http://www.hlaptop.com/fhkb.owl#Peter_William_Bright_1941"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1934</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">David</hasFirstGivenName>
     </owl:NamedIndividual>
     
 
 
     <!-- http://www.hlaptop.com/fhkb.owl#Dereck_Heath -->
 
-    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Dereck_Heath"/>
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Dereck_Heath">
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heath</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dereck</hasFirstGivenName>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.hlaptop.com/fhkb.owl#Diana_Pool -->
 
-    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Diana_Pool"/>
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Diana_Pool">
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pool</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diana</hasFirstGivenName>
+    </owl:NamedIndividual>
     
 
 
@@ -750,6 +801,9 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Charles_Herbert_Rever_1895"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Violet_Sylvia_Steward_1894"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1929</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rever</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eileen</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mary</hasSecondGivenName>
     </owl:NamedIndividual>
     
 
@@ -758,6 +812,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Elizabeth_Frances_Jessop_1869">
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1869</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jessop</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elizabeth</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frances</hasSecondGivenName>
     </owl:NamedIndividual>
     
 
@@ -768,6 +825,8 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#James_Alexander_Archer_1882"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Violet_Heath_1887"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1912</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Archer</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ethel</hasFirstGivenName>
     </owl:NamedIndividual>
     
 
@@ -778,6 +837,9 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Henry_Edmund_Bright_1862"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Charlotte_Hewett_1863"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1889</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frederick</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Herbert</hasSecondGivenName>
     </owl:NamedIndividual>
     
 
@@ -786,6 +848,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Henry_Edmund_Bright_1862">
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1862</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Henry</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edmund</hasSecondGivenName>
     </owl:NamedIndividual>
     
 
@@ -796,6 +861,9 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Henry_Edmund_Bright_1862"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Charlotte_Hewett_1863"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1887</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Henry</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edmund</hasSecondGivenName>
     </owl:NamedIndividual>
     
 
@@ -806,6 +874,8 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#John_Bright_1930"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Joyce_Gosport"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1959</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ian</hasFirstGivenName>
     </owl:NamedIndividual>
     
 
@@ -816,6 +886,9 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#James_Alexander_Archer_1882"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Violet_Heath_1887"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1906</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Archer</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iris</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ellen</hasSecondGivenName>
     </owl:NamedIndividual>
     
 
@@ -824,6 +897,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#James_Alexander_Archer_1882">
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1882</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Archer</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alexander</hasSecondGivenName>
     </owl:NamedIndividual>
     
 
@@ -834,6 +910,8 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Peter_William_Bright_1941"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Diana_Pool"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1964</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James</hasFirstGivenName>
     </owl:NamedIndividual>
     
 
@@ -844,6 +922,9 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Henry_Edmund_Bright_1862"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Charlotte_Hewett_1863"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1891</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frank</hasSecondGivenName>
     </owl:NamedIndividual>
     
 
@@ -857,6 +938,8 @@
         <isSisterOf rdf:resource="http://www.hlaptop.com/fhkb.owl#Mark_Bright_1956"/>
         <isSisterOf rdf:resource="http://www.hlaptop.com/fhkb.owl#William_Bright_1970"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1964</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Janet</hasFirstGivenName>
     </owl:NamedIndividual>
     
 
@@ -867,6 +950,8 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#William_George_Bright_1901"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Iris_Ellen_Archer_1906"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1930</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John</hasFirstGivenName>
     </owl:NamedIndividual>
     
 
@@ -875,6 +960,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#John_Tacey_Steward_1873">
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1873</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Steward</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tacey</hasSecondGivenName>
     </owl:NamedIndividual>
     
 
@@ -885,13 +973,18 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#James_Alexander_Archer_1882"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Violet_Heath_1887"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1921</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Archer</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joyce</hasFirstGivenName>
     </owl:NamedIndividual>
     
 
 
     <!-- http://www.hlaptop.com/fhkb.owl#Joyce_Gosport -->
 
-    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Joyce_Gosport"/>
+    <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Joyce_Gosport">
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gosport</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joyce</hasFirstGivenName>
+    </owl:NamedIndividual>
     
 
 
@@ -901,6 +994,8 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Peter_William_Bright_1941"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Diana_Pool"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1966</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Julie</hasFirstGivenName>
     </owl:NamedIndividual>
     
 
@@ -911,6 +1006,9 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Henry_Edmund_Bright_1862"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Charlotte_Hewett_1863"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1904</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kathleen</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minnie</hasSecondGivenName>
     </owl:NamedIndividual>
     
 
@@ -921,6 +1019,9 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Henry_Edmund_Bright_1862"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Charlotte_Hewett_1863"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1890</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leonard</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John</hasSecondGivenName>
     </owl:NamedIndividual>
     
 
@@ -929,6 +1030,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Lois_Green_1871">
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1871</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lois</hasFirstGivenName>
     </owl:NamedIndividual>
     
 
@@ -939,6 +1042,9 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Charles_Herbert_Rever_1895"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Violet_Sylvia_Steward_1894"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1934</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rever</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Margaret</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grace</hasSecondGivenName>
     </owl:NamedIndividual>
     
 
@@ -949,6 +1055,9 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Dereck_Heath"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Eileen_Mary_Rever_1929"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1960</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heath</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Antonhy</hasSecondGivenName>
     </owl:NamedIndividual>
     
 
@@ -962,6 +1071,8 @@
         <isBrotherOf rdf:resource="http://www.hlaptop.com/fhkb.owl#Janet_Bright_1964"/>
         <isBrotherOf rdf:resource="http://www.hlaptop.com/fhkb.owl#William_Bright_1970"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1956</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark</hasFirstGivenName>
     </owl:NamedIndividual>
     
 
@@ -972,6 +1083,9 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Dereck_Heath"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Eileen_Mary_Rever_1929"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1964</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heath</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Charles</hasSecondGivenName>
     </owl:NamedIndividual>
     
 
@@ -982,6 +1096,9 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Henry_Edmund_Bright_1862"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Charlotte_Hewett_1863"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1899</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nora</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ada</hasSecondGivenName>
     </owl:NamedIndividual>
     
 
@@ -992,6 +1109,9 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#James_Alexander_Archer_1882"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Violet_Heath_1887"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1909</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Archer</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Norman</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James</hasSecondGivenName>
     </owl:NamedIndividual>
     
 
@@ -1002,6 +1122,9 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#William_George_Bright_1901"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Iris_Ellen_Archer_1906"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1941</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peter</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">William</hasSecondGivenName>
     </owl:NamedIndividual>
     
 
@@ -1012,6 +1135,9 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#David_Bright_1934"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Margaret_Grace_Rever_1934"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1962</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Richard</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John</hasSecondGivenName>
     </owl:NamedIndividual>
     
 
@@ -1023,6 +1149,9 @@
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Margaret_Grace_Rever_1934"/>
         <isBrotherOf rdf:resource="http://www.hlaptop.com/fhkb.owl#Richard_John_Bright_1962"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1965</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robert</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">David</hasSecondGivenName>
     </owl:NamedIndividual>
     
 
@@ -1031,6 +1160,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#Violet_Heath_1887">
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1887</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heath</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Violet</hasFirstGivenName>
     </owl:NamedIndividual>
     
 
@@ -1041,6 +1172,9 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#John_Tacey_Steward_1873"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Lois_Green_1871"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1894</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Steward</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Violet</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sylvia</hasSecondGivenName>
     </owl:NamedIndividual>
     
 
@@ -1051,6 +1185,8 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#John_Bright_1930"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Joyce_Gosport"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1970</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">William</hasFirstGivenName>
     </owl:NamedIndividual>
     
 
@@ -1061,6 +1197,9 @@
         <hasFather rdf:resource="http://www.hlaptop.com/fhkb.owl#Henry_Edmund_Bright_1862"/>
         <hasMother rdf:resource="http://www.hlaptop.com/fhkb.owl#Charlotte_Hewett_1863"/>
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1901</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bright</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">William</hasFirstGivenName>
+        <hasSecondGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">George</hasSecondGivenName>
     </owl:NamedIndividual>
     
 
@@ -1069,6 +1208,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.hlaptop.com/fhkb.owl#William_Rever_1870">
         <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1870</hasBirthYear>
+        <hasFamilyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rever</hasFamilyName>
+        <hasFirstGivenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">William</hasFirstGivenName>
     </owl:NamedIndividual>
     
 
