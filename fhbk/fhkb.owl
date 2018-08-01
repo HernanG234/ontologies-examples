@@ -200,6 +200,7 @@
     <!-- http://www.hlaptop.com/fhkb.owl#hasParent -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasParent">
+        <owl:equivalentProperty rdf:resource="http://www.hlaptop.com/fhkb.owl#isChildOf"/>
         <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasAncestor"/>
         <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isParentOf"/>
         <rdfs:domain rdf:resource="http://www.hlaptop.com/fhkb.owl#Person"/>
