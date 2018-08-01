@@ -216,6 +216,19 @@
     
 
 
+    <!-- http://www.hlaptop.com/fhkb.owl#hasHusband -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasHusband">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasSpouse"/>
+        <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isHusbandOf"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#isFemalePartnerIn"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasMalePartner"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.hlaptop.com/fhkb.owl#hasMalePartner -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasMalePartner">
@@ -343,6 +356,15 @@
     
 
 
+    <!-- http://www.hlaptop.com/fhkb.owl#hasSpouse -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasSpouse">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasRelation"/>
+        <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isSpouseOf"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.hlaptop.com/fhkb.owl#hasUncle -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasUncle">
@@ -353,6 +375,19 @@
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasParent"/>
             <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasBrother"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#hasWife -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#hasWife">
+        <rdfs:subPropertyOf rdf:resource="http://www.hlaptop.com/fhkb.owl#hasSpouse"/>
+        <owl:inverseOf rdf:resource="http://www.hlaptop.com/fhkb.owl#isWifeOf"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#isMalePartnerIn"/>
+            <rdf:Description rdf:about="http://www.hlaptop.com/fhkb.owl#hasFemalePartner"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
@@ -434,6 +469,12 @@
     
 
 
+    <!-- http://www.hlaptop.com/fhkb.owl#isHusbandOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isHusbandOf"/>
+    
+
+
     <!-- http://www.hlaptop.com/fhkb.owl#isMalePartnerIn -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isMalePartnerIn"/>
@@ -470,9 +511,21 @@
     
 
 
+    <!-- http://www.hlaptop.com/fhkb.owl#isSpouseOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isSpouseOf"/>
+    
+
+
     <!-- http://www.hlaptop.com/fhkb.owl#isUncleOf -->
 
     <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isUncleOf"/>
+    
+
+
+    <!-- http://www.hlaptop.com/fhkb.owl#isWifeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.hlaptop.com/fhkb.owl#isWifeOf"/>
     
 
 
